@@ -14,6 +14,56 @@ body.pages {
   // background-color: #d2dfd4;    
 }
 
+p {
+  font-size: 1.1666em;
+  line-height: 1.5;
+  margin: 0 0 1.5em 0;
+}
+
+h1 {
+  font-size: 2em; /* 24px */
+  line-height: 1.5em; /* 36px */
+  margin-top: 1em;
+  margin-bottom: 0.5em;  
+}
+
+h2 {
+  font-size: 1.5em; /* 18px */
+  line-height: 1em; /* 18px */
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.1667em; /* 14px */
+  line-height: 1.2857em; /* 18px */
+  margin-top: 0.857em;
+  margin-bottom: 0.428em;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 1.5em; /* 18px */
+  line-height: 1em; /* 18px */
+  margin-top: 1em;
+  margin-bottom: 0em;
+}
+
+h5 {
+  font-size: 1.3333em; /* 16px */
+  line-height: 1.125em; /* 18px */
+  margin-top: 1.125em;
+  margin-bottom: 0em;
+}
+
+h6 {
+  font-size: 1.1667em; /* 14px */
+  line-height: 1.2857em; /* 18px */
+  margin-top: 1.2857em;
+  margin-bottom: 0em;
+}
+
 section#bree_logo {
   position: relative;
   width: 40%;
@@ -61,6 +111,7 @@ section#bree_logo {
   
   p {
     font-size: 1em;
+    margin-bottom: 0.5em  !important;
   }
   
   em {
@@ -105,5 +156,62 @@ section#bree_logo {
     vertical-align: middle;
     display: inline-block;
     padding-top: 0.0833em;
+  }
+}
+
+h1.definition {
+  font-family: "Times New Roman", Georgia, serif;
+  text-align: center;
+  font-size: 3.1666em;
+  margin: 1.5em 0 1em;
+  color: #232323;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: -1px;
+  line-height: 1.1;
+  border-top: 3px double #a2907d;
+  padding: 0.75em 0;
+}
+
+article#who_is_it_for {
+  position: relative;
+  width: 65%;
+  float: left;
+  
+  h2 {
+    margin-top: 0;
+  }
+}
+
+aside#client_feedback {
+  position: relative;
+  float: right;
+  width: 190px;
+  background-color: #a2907d;
+  color: #fff;
+  border-radius: 3px;
+  
+  img {
+    border-radius: 3px 3px 0 0;
+  }
+  
+  h1 {
+    font-size: 1em;
+    font-weight: bold;
+    margin: 0 0 0.35em;
+  }
+  
+  h2 {
+    font-size: 1em;
+    font-weight: normal;
+    margin: 0;
+  }
+  
+  p {
+    border-top: 1px solid #888;
+    padding-top: 0.5em;
+    margin-top: 0.75em;
+    line-height: 1.1;
+    font-style: italic;
   }
 }
