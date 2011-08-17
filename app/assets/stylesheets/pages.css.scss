@@ -1,3 +1,65 @@
-// Place all the styles related to the pages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.container {
+  display: block;
+  position: relative;
+  width: 880px;
+  margin: 0 auto;
+  padding: 0 20px;
+  min-height: 100%;
+}
+
+body.pages {
+  background-color: #bdb094;
+  font-size: 0.75em;
+  line-height: 1.5;
+  // background-color: #d2dfd4;    
+}
+
+section#bree_logo {
+  position: relative;
+  width: 40%;
+  
+  h1 {
+    font-family: 'Nobile', sans-serif;
+    font-size: 140px;
+    text-shadow: 0 1px 0 #fff;
+    color: #121212;
+    line-height: 1;
+    margin: 0;
+  }
+  
+  h2 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    font-size: 1em;
+    margin-left: 1.25em;
+    
+    a {
+      color: black;
+      text-decoration: none;
+      border-bottom: 1px solid #777;
+      
+      &:hover {
+        text-decoration: none;
+        color: black;
+      }
+    }
+  }
+}
+
+#request_form {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 0;
+  width: 368px;
+  background-color: #a2907d;
+  color: #fff;
+  border-radius: 0 0 5px 5px;
+  padding: 7px 12px;
+  font-family: 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+  
+  p {
+    font-size: 1em;
+  }
+}
