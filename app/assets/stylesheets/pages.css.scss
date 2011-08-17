@@ -56,10 +56,54 @@ section#bree_logo {
   background-color: #a2907d;
   color: #fff;
   border-radius: 0 0 5px 5px;
-  padding: 7px 12px;
+  padding: 7px 12px 15px;
   font-family: 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
   
   p {
     font-size: 1em;
+  }
+  
+  em {
+    font-size: 0.9em;
+    padding-top: 3px;
+  }
+  
+  span.return-sign {
+    display: inline-block;
+    margin-left: 0.25em;
+    font-size: 1.6667em;    
+  }
+  
+  input[type="text"] {
+    border: 1px solid #999;
+    font-size: 1.5em;
+    color: #222;
+    margin: 0;
+    max-width: 300px;
+    min-width: 300px;
+    padding: 7px 10px;
+    width: 300px;
+    -moz-box-shadow: inset 0 1px 2px #AAA;
+    -webkit-box-shadow: inset 0 1px 2px #AAA;
+    -o-box-shadow: inset 0 1px 2px #AAA;
+    box-shadow: inset 0 1px 2px #AAA;
+    
+    &:focus {
+      outline-color: #AD141E;
+    }
+  }
+  
+  label {
+    color: #888;
+    font-size: 1.5em;
+    font-weight: normal;
+    left: 12px;
+    top: 8px;    
+    position: absolute;
+    z-index: 1;
+    line-height: 1;
+    vertical-align: middle;
+    display: inline-block;
+    padding-top: 0.0833em;
   }
 }

@@ -4,10 +4,18 @@
 <section id="bree_logo">
   <hgroup>
     <h1>Bree</h1>
-    <h2><%= mail_to "hello@adammiribyan.com", "Адам Мирибян" %> в партнерстве с <%= link_to "Компьютерным Миром", "http://samara.km63.ru" %>.</h2>
+    <h2><%= mail_to "hello@adammiribyan.com", "Adam Miribyan" %> в партнерстве с <%= link_to "Компьютерным Миром", "http://samara.km63.ru" %>.</h2>
   </hgroup>
 </section>
 
 <div id="request_form">
-  <p>Оставьте свой адрес электронной почты или номер телефона, и мы свяжемся с вами, как только <strong>Бри</strong> появится в продаже.</p>  
+  <p>Оставьте свой адрес электронной почты или номер телефона, <br />и мы свяжемся с вами, как только <strong>Бри</strong> появится в продаже.</p>
+  <form class="request">
+    <div style="position: relative; display: inline-block;">
+      <input type="text" name="request[body]" class="request_body" id="request_body">
+      <label for="request_body">Электропочта или телефон</label>
+    </div>
+    <span class="return-sign">↵</span>
+  </form>
+  <em>Бесплатный пробный период и скидка 30% первым 30 клиентам.</em>
 </div>
