@@ -114,6 +114,14 @@ section#bree_logo {
   p {
     font-size: 1em;
     margin-bottom: 0.5em  !important;
+    
+    &.done{
+      font-size: 1.083em;
+      text-align: center;
+      font-weight: bold;
+      margin-top: 0.75em;
+      text-shadow: 0 1px 0 #666;
+    }
   }
   
   em {
@@ -124,7 +132,12 @@ section#bree_logo {
   span.return-sign {
     display: inline-block;
     margin-left: 0.25em;
-    font-size: 1.6667em;    
+    font-size: 1.6667em;
+    cursor: pointer;
+  }
+  
+  div.input {
+    display: inline-block;
   }
   
   input[type="text"] {
@@ -158,6 +171,14 @@ section#bree_logo {
     vertical-align: middle;
     display: inline-block;
     padding-top: 0.0833em;
+  }
+}
+
+.simple_form {
+  position: relative;
+  
+  div.input {
+    position: relative;
   }
 }
 

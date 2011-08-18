@@ -10,6 +10,8 @@ class PagesController < ApplicationController
   end
   
   def show
+    @request = Request.new
+    
     render template: current_page
   end
   
