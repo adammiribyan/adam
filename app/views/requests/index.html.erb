@@ -1,0 +1,7 @@
+<% title "Адреса потенциальных клиентов" %>
+
+<ol id="requests">
+  <% @requests.each do |request| %>
+  <%= content_tag_for(:li, request) { request.body } %>
+  <% end %>
+</ol>
