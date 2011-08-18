@@ -4,5 +4,5 @@ Adam::Application.routes.draw do
   root :to => 'welcome#index'
   
   # Beautiful promo pages
-  get '/:id' => 'pages#show'
+  match '/:id' => 'pages#show'
 end

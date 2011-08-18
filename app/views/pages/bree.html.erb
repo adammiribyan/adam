@@ -9,8 +9,8 @@
 </section>
 
 <div id="request_form">
-  <p>Оставьте свой адрес электронной почты или номер телефона, <br />и мы свяжемся с вами, как только <strong>Бри</strong> появится в продаже.</p>
-  <form class="request">
+  <p>Оставьте свой адрес электронной почты или номер телефона, и мы свяжемся с вами, как только <strong>Бри</strong> появится в продаже.</p>
+  <form class="request" method="post" action="/bree">
     <div style="position: relative; display: inline-block;">
       <input type="text" name="request[body]" class="request_body" id="request_body">
       <label for="request_body">Электропочта или телефон</label>
@@ -22,20 +22,69 @@
 
 <h1 class="definition">Bree — это простое и удобное средство управления взаимоотношениями с вашими пациентами.</h1>
 
-<article id="who_is_it_for">  
-  <h2>Для кого наше приложение</h2>
-  <p>Мы ориентируемся на небольшие клиники, способные легко реагировать и развиваться. Способные фокусироваться на хороших идеях и выкинуть плохие. Способные слушать своих пациентов и отвечать им. Способные внедрить новые технологии сейчас, а не потом.</p>  
-</article>
+<ul id="benefits">
+  <li>
+    <p>Имейте под рукой данные о всех пациентах.</p>
+    <div class="image">
+      <%= link_to image_tag("scr-1-th.jpg"), asset_path("scr-1.jpg") %>
+    </div>
+  </li>
+  <li>
+    <p>Получайте статистику по работе каждого врача и клиники в целом.</p>
+    <div class="image">
+      <%= link_to image_tag("scr-2-th.jpg"), asset_path("scr-2.jpg") %>
+    </div>
+  </li>
+  <li>
+    <p>Будьте всегда в курсе дней рождений ваших пациентов.</p>
+    <div class="image">
+      <%= link_to image_tag("scr-3-th.jpg"), asset_path("scr-3.jpg") %>
+    </div>
+  </li>
+  <li>
+    <p>Заводите карту для нового пациента всего за несколько минут.</p>
+    <div class="image">
+      <%= link_to image_tag("scr-4-th.jpg"), asset_path("scr-4.jpg") %>
+    </div>
+  </li>
+  <li>
+    <p>Формируйте индивидуальный подход к каждому пациенту, сохраняя заметки о нем.</p>
+    <div class="image">
+      <%= link_to image_tag("scr-5-th.jpg"), asset_path("scr-5.jpg") %>
+    </div>
+  </li>
+  <li>
+    <p>Заполняйте истории болезни c помощью готовых шаблонов.</p>
+    <div class="image">
+      <%= link_to image_tag("scr-6-th.jpg"), asset_path("scr-6.jpg") %>
+    </div>
+  </li>
+</ul>
 
 <aside id="client_feedback">
-  <%= image_tag "z_8c83620c.jpg", width: 190, height: 143 %>
+  <%= image_tag "katz.jpg", width: 190, height: 143 %>
   <div style="padding: 0 12px 15px;">
     <hgroup>
       <h1>Светлана Кац</h1>
       <h2>Заведующая областным рентгенорадиологическим отделением СОКБ им. М.И. Калинина</h2>
     </hgroup>
-    <p>Я очень давно сотрудничаю с компанией «Компьютерный Мир» и всегда довольна качеством оказываемых услуг.</p>
+    <p>«Я очень давно сотрудничаю с компанией «Компьютерный Мир» и всегда довольна качеством оказываемых услуг».</p>
   </div>
 </aside>
 
-<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />v
+<div class="clear"></div>
+
+<section id="contacts">
+  <h1 class="definition">Остались вопросы? Свяжитесь с нами</h1>
+  
+  <ul id="contacts_list">
+    <li><span class="label">Тел.:</span> +7 937 203-49-41</li>
+    <li><span class="label">Электропочта:</span> <%= mail_to "hello@adammiribyan.com" %></li>
+    <li><span class="label">Адрес:</span> г. Самара, ул. Полевая, д. 43, офис 110.</li>
+    <li><span class="label">Режим работы:</span> по будням, с 9 утра и до 6 вечера.</li>
+  </ul>
+  
+  <div class="map"><%= render "map" %></div>
+  
+  <div class="clear"></div>
+</section>

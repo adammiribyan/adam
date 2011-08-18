@@ -1,0 +1,2 @@
+//= require ./FancyZoom
+//= require ./FancyZoomHTML

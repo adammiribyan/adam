@@ -10,9 +10,15 @@
     <![endif]-->
     <%= csrf_meta_tag %>
   </head>
-  <body class="<%= params.values_at(:controller, :action).join(' ') %>">
+  <body class="<%= params.values_at(:controller, :action).join(' ') %>" onload="setupZoom()">
     <div class="container">
       <%= yield %>
     </div>
+    
+    <% if controller.action_name == "show" %>
+    <footer>
+      <p>©2011 Adam Miribyan. Все права защищены.</p>
+    </footer>
+    <% end %>
   </body>
 </html>
