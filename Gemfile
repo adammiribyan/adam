@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.1.0.rc3'
+gem 'rails', '3.1.0.rc5'
 
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
@@ -50,5 +50,5 @@ group :test do
 end
 
 group :production do
-  gem 'mustang'
+  # gem 'mustang'
 end
