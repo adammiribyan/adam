@@ -289,8 +289,10 @@ section#contacts {
   ul#contacts_list {
     list-style: none;
     position: relative;
-    float: left;
-    width: 40%;
+    width: 100%;
+    padding: 0;
+    margin: 0 0 2.25em;
+    text-align: center;
     
     li {
       font-size: 1.1667em;
@@ -305,13 +307,14 @@ section#contacts {
   .map {
     display: block;
     position: relative;
-    float: right;
+    margin: 0 auto;
     overflow: hidden;
     background-color: rgba(255, 255, 255, 0.5);
     -moz-border-radius: 5px; /* Firefox */
     -webkit-border-radius: 5px; /* Safari, Chrome */
     border-radius: 5px; /* CSS3 */
     padding: 5px;
+    width: 450px;
   }
 }
 
