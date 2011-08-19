@@ -11,7 +11,7 @@
 <div id="request_form">
   <p>Оставьте свой адрес электронной почты или номер телефона, и мы свяжемся с вами, как только <strong>Бри</strong> появится в продаже.</p>
   <%= simple_form_for @request, remote: true do |f| %>
-    <%= f.input :body, label: "Электропочта или номер телефона" %>
+    <%= f.input :body, label: "Электропочта или телефон" %>
     <span class="return-sign">↵</span>
   <% end %>
   <em>Бесплатный пробный период и скидка 30% первым 30 клиентам.</em>
