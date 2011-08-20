@@ -186,7 +186,7 @@ h1.definition {
   font-family: "Times New Roman", Georgia, serif;
   text-align: center;
   font-size: 3.1666em;
-  margin: 1.5em 0 1em;
+  margin: 1.5em 0 0.75em;
   color: #232323;
   font-style: normal;
   font-weight: 500;
@@ -194,6 +194,15 @@ h1.definition {
   line-height: 1.1;
   border-top: 3px double #a2907d;
   padding: 0.75em 0;
+  
+  p {
+    font-size: 0.4157em;
+    font-family: Helvetica, Arial, sans-serif;
+    line-height: 1.4;
+    padding-top: 1.25em;
+    margin: 0;
+    letter-spacing: normal;
+  }
 }
 
 ul#benefits {
@@ -319,6 +328,7 @@ section#contacts {
 }
 
 footer {
+  position: relative;
   background-color: #A2907D;
   padding: 5px 10px;
   border-top: 1px solid #89745D;
@@ -328,5 +338,32 @@ footer {
   
   p {
     margin: 0.25em;
+  }
+  
+  #social_buttons {
+    position: absolute;
+    left: 20px;
+    top: 3px;
+    width: 386px;
+    text-align: left;
+    
+    .twitter, .facebook {
+      display: inline-block;
+      zoom: 1;
+      font-size: 1em;
+      letter-spacing: normal;
+      white-space: normal;
+      vertical-align: top;
+    }
+    
+    .twitter {
+      padding: 4px 2px 0 0;
+      width: 70px;
+    }
+    
+    .facebook {
+      padding-top: 4px;
+      width: 280px;
+    }
   }
 }
