@@ -186,7 +186,7 @@ h1.definition {
   font-family: "Times New Roman", Georgia, serif;
   text-align: center;
   font-size: 3.1666em;
-  margin: 1.5em 0 0.75em;
+  margin: 1.5em 0 0.5em;
   color: #232323;
   font-style: normal;
   font-weight: 500;
@@ -202,6 +202,24 @@ h1.definition {
     padding-top: 1.25em;
     margin: 0;
     letter-spacing: normal;
+  }
+}
+
+.image {
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.5);
+  -moz-border-radius: 5px; /* Firefox */
+  -webkit-border-radius: 5px; /* Safari, Chrome */
+  border-radius: 5px; /* CSS3 */
+  padding: 5px;
+  
+  &.poster {
+    width: 600px;
+    height: 610px;
+    margin: 0 auto 4.833em;
+    -moz-box-shadow: 0 0 5px #ccc;
+    -webkit-box-shadow: 0 0 5px #ccc;
+    box-shadow: 0 0 5px #ccc;
   }
 }
 
@@ -224,12 +242,6 @@ ul#benefits {
     vertical-align: top;
     
     .image {
-      overflow: hidden;
-      background-color: rgba(255, 255, 255, 0.5);
-      -moz-border-radius: 5px; /* Firefox */
-      -webkit-border-radius: 5px; /* Safari, Chrome */
-      border-radius: 5px; /* CSS3 */
-      padding: 5px;
       width: 146px;
       height: 146px;
       margin-left: 25px;
@@ -347,7 +359,7 @@ footer {
     width: 386px;
     text-align: left;
     
-    .twitter, .facebook {
+    .twitter, .facebook, .plus-one {
       display: inline-block;
       zoom: 1;
       font-size: 1em;
@@ -359,6 +371,10 @@ footer {
     .twitter {
       padding: 4px 2px 0 0;
       width: 70px;
+    }
+    
+    .plus-one {
+      padding: 2px 0 0 45px;
     }
     
     .facebook {
