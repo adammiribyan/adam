@@ -1,3 +1,49 @@
-// Place all the styles related to the welcome controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+body.welcome {
+  header {
+    h2 {
+      font-size: 1em;
+    }
+  }  
+  
+  ul#projects {
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    margin-top: 3.75em;
+    padding: 0;
+    
+    
+    li {
+      display: inline-block;
+      margin-right: 0.75em;
+      
+      a {
+        display: inline-block;
+        padding: 0 1px;
+        
+        &:link, &:visited {
+          color: #222;
+          text-decoration: none;
+          border-bottom: 1px dotted #222;
+        }
+        
+        &:hover {
+          color: white;
+          background-color: #222;
+          text-decoration: none;
+          border: none;
+        }
+      }
+      
+      &.coming-soon {
+        color: #999;
+      }
+    }
+  }
+  
+  p.description {  
+    display: none;
+    color: #222;
+    font-size: 0.83em;
+  }
+}
