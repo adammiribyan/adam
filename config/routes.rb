@@ -4,7 +4,7 @@ Adam::Application.routes.draw do
   # The priority is based upon order of creation:
   # first created -> highest priority.
   match '/:locale' => 'welcome#index', locale: /ru|cz/
-  root :to => 'welcome#index'  
+  root :to => 'welcome#index'
   
   # Beautiful promo pages
   match '/:id' => 'pages#show'
