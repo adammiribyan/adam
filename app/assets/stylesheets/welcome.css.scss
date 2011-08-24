@@ -26,10 +26,10 @@ body.welcome {
         }
         
         &:hover {
-          color: white;
-          background-color: #888;
+          color: #222;
+          background-color: #f7eec6;
           text-decoration: none;
-          border-color: #888;
+          border-color: #f7eec6;
         }
       }
     }
@@ -87,7 +87,7 @@ body.welcome {
     }
   }
   
-  p.description {  
+  p.description {
     display: none;
     color: #222;
     font-size: 0.91667em;
