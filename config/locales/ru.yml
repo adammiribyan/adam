@@ -1,2 +1,6 @@
 ru:
-  
+  projects:
+    talks:
+      description: "Красивые блоги."
+    bree:
+      description: "Милые стоматологи."  

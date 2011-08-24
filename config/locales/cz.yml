@@ -1,2 +1,6 @@
 cz:
-  
+  projects:
+    talks:
+      description: "Hezké blogy."
+    bree:
+      description: "Roztomilí zubaři."

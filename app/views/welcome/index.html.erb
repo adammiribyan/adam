@@ -6,8 +6,8 @@
 </header>
 
 <ul id="projects">
-  <li data-description="Красивые блоги."><%= link_to "Talks", "http://t-a-l-k-s.com" %></li>
-  <li data-description="Добрые стоматологи."><%= link_to "Bree", "/bree" %></li>
+  <li data-description="<%= t(:description, scope: [:projects, :talks]) %>"><%= link_to "Talks", "http://t-a-l-k-s.com" %></li>
+  <li data-description="<%= t(:description, scope: [:projects, :bree]) %>"><%= link_to "Bree", "/bree" %></li>
   <li class="coming-soon">Tongueshape</li>
 </ul>
 
