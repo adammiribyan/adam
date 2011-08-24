@@ -3,7 +3,37 @@ body.welcome {
     h2 {
       font-size: 1em;
     }
-  }  
+  }
+  
+  ul#language {
+    position: relative;
+    display: block;
+    list-style: none;
+    margin-bottom: 0;
+    padding: 0;
+    
+    li {
+      font-size: 0.75em;
+      
+      a {
+        display: inline-block;
+        padding: 0 1px;
+        
+        &:link, &:visited {
+          color: #888;
+          text-decoration: none;
+          border-bottom: 1px solid #888;
+        }
+        
+        &:hover {
+          color: white;
+          background-color: #888;
+          text-decoration: none;
+          border-color: #888;
+        }
+      }
+    }
+  }
   
   ul#projects {
     position: relative;
@@ -15,7 +45,16 @@ body.welcome {
     
     li {
       display: inline-block;
-      margin-right: 0.75em;
+      margin-right: 1.75em;
+      
+      .date {
+        display: block;
+        font-size: 0.75em;
+        color: #999;
+        letter-spacing: 1px;
+        text-align: left;
+        padding: 0 0 0.5em 1px;
+      }
       
       a {
         display: inline-block;
@@ -38,12 +77,19 @@ body.welcome {
       &.coming-soon {
         color: #999;
       }
+      
+      &.caption {
+        color: #222;
+        letter-spacing: 0;
+        font-weight: bold;
+        font-size: 0.75em;
+      }
     }
   }
   
   p.description {  
     display: none;
     color: #222;
-    font-size: 0.83em;
+    font-size: 0.91667em;
   }
 }

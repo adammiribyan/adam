@@ -1,3 +1,11 @@
+<ul id="language">
+  <% unless I18n.locale == :cz %>
+    <li><%= link_to "CZ", locale: "cz" %></li>
+  <% else %>
+    <li><%= link_to "RU", "/"  %></li>
+  <% end %>
+</ul>
+
 <header>
   <hgroup>
     <h1 style="line-height: 1;">Adam Miribyan</h1>
@@ -6,9 +14,19 @@
 </header>
 
 <ul id="projects">
-  <li data-description="<%= t(:description, scope: [:projects, :talks]) %>"><%= link_to "Talks", "http://t-a-l-k-s.com" %></li>
-  <li data-description="<%= t(:description, scope: [:projects, :bree]) %>"><%= link_to "Bree", "/bree" %></li>
-  <li class="coming-soon">Tongueshape</li>
+  <li class="caption"><%= t(:caption, scope: [:projects]) %></li>
+  <li data-description="<%= t(:description, scope: [:projects, :talks]) %>">
+    <span class="date">2010</span>
+    <%= link_to "Talks", "http://t-a-l-k-s.com" %>    
+  </li>
+  <li data-description="<%= t(:description, scope: [:projects, :bree]) %>">
+    <span class="date">2011</span>
+    <%= link_to "Bree", "/bree" %>
+  </li>
+  <li class="coming-soon">
+    <span class="date">2012</span>
+    Tongueshape
+  </li>
 </ul>
 
 <p class="description"></p>
