@@ -1,0 +1,8 @@
+<%= content_tag_for(:article, post) do %>
+<header>
+  <h1><%= post.title %></h1>
+  <h2><%= post.lead %></h2>
+</header>
+<%= simple_format post.body %>
+<% end %>
+  

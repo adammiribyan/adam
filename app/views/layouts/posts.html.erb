@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:fb="https://www.facebook.com/2008/fbml" xmlns:og="http://opengraphprotocol.org/schema/">
   <head>
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
     <title><%= content_for?(:title) ? yield(:title) : "Adam Miribyan" %></title>
@@ -11,7 +11,13 @@
     <%= csrf_meta_tag %>
   </head>
   <body class="<%= params.values_at(:controller, :action).join(' ') %>">
+    <%= render "google_plus_init" %>
+    <%= render "facebook_init" %>
+    
     <div class="container">
+      <header>
+        <h1 class="logo">Get Some</h1>
+      </header>
       <%= yield %>
     </div>
     
