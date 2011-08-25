@@ -80,4 +80,9 @@ class PostsController < ApplicationController
       format.json { head :ok }
     end
   end
+  
+  # We don't want ?locale=ru to be appended to the url
+  def default_url_options(options={})
+    {}
+  end
 end

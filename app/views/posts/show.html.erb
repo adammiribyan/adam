@@ -1,20 +1,3 @@
-<p id="notice"><%= notice %></p>
+<%= title @post.title %>
 
-<p>
-  <b>Title:</b>
-  <%= @post.title %>
-</p>
-
-<p>
-  <b>Lead:</b>
-  <%= @post.lead %>
-</p>
-
-<p>
-  <b>Body:</b>
-  <%= @post.body %>
-</p>
-
-
-<%= link_to 'Edit', edit_post_path(@post) %> |
-<%= link_to 'Back', posts_path %>
+<%= render @post %>

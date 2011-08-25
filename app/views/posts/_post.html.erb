@@ -1,8 +1,19 @@
 <%= content_tag_for(:article, post) do %>
 <header>
-  <h1><%= post.title %></h1>
-  <h2><%= post.lead %></h2>
+  <hgroup>
+    <h1><%= link_to_unless_current post.title, post %><time datetime="<%= post.created_at %>"><%= l(post.created_at.to_date)%></time></h1>
+    <h2><%= post.lead %></h2>
+  </hgroup>
 </header>
-<%= simple_format post.body %>
+<%= markdown post.body %>
+<div class="share">
+  <div class="twitter"><a href="http://twitter.com/share" class="twitter-share-button" data-url="<%= post_url(post) %>" data-text="<%= post.title %>" data-count="horizontal" data-via="getsome_ru">Tweet</a></div>
+  <div id="vk_like" class="vkontakte-like">
+    <script type="text/javascript">
+      VK.Widgets.Like("vk_like", {type: "mini", pageTitle: "<%= post.title %>", pageDescription: "<%= post.lead %>", pageUrl: "<%= post_url(post) %>"});
+    </script>
+  </div>
+  <div class="facebook-like"><fb:like href="<%= post_url(post) %>" send="false" width="400" show_faces="true" action="like" font="Arial"></fb:like></div>
+</div>
 <% end %>
   
