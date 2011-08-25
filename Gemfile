@@ -25,6 +25,9 @@ gem 'russian'
 # jQuery
 gem 'jquery-rails'
 
+# Redcarpet for markdown
+gem 'redcarpet'
+
 group :development do
   # Deploy with Capistrano
   gem 'capistrano'
