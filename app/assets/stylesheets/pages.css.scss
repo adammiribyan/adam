@@ -1,68 +1,55 @@
-.container {
-  display: block;
-  position: relative;
-  width: 880px;
-  margin: 0 auto;
-  padding: 0 20px;
-  min-height: 100%;
-}
-
 body.pages {
   // background-color: #d1cdc3;
   font-size: 0.75em;
   line-height: 1.5;
   background-color: #d2dfd4;    
+  
+  footer {
+  position: relative;
+  background-color: #A2907D;
+  padding: 5px 10px;
+  border-top: 1px solid #89745D;
+  font-size: 0.9em;
+  color: #5B534B;
+  text-align: center;
+  
+  p {
+    margin: 0.25em;
+  }
+  
+  #social_buttons {
+    position: absolute;
+    left: 20px;
+    top: 3px;
+    width: 386px;
+    text-align: left;
+    
+    .twitter, .facebook, .plus-one {
+      display: inline-block;
+      zoom: 1;
+      font-size: 1em;
+      letter-spacing: normal;
+      white-space: normal;
+      vertical-align: top;
+    }
+    
+    .twitter {
+      padding: 4px 2px 0 0;
+      width: 70px;
+    }
+    
+    .plus-one {
+      padding: 2px 0 0 45px;
+    }
+    
+    .facebook {
+      padding-top: 4px;
+      width: 280px;
+    }
+  }
+}
 }
 
-p {
-  font-size: 1.1666em;
-  line-height: 1.5;
-  margin: 0 0 1.5em 0;
-}
-
-h1 {
-  font-size: 2em; /* 24px */
-  line-height: 1.5em; /* 36px */
-  margin-top: 1em;
-  margin-bottom: 0.5em;  
-}
-
-h2 {
-  font-size: 1.5em; /* 18px */
-  line-height: 1em; /* 18px */
-  margin-top: 1em;
-  margin-bottom: 0.5em;
-  font-weight: bold;
-}
-
-h3 {
-  font-size: 1.1667em; /* 14px */
-  line-height: 1.2857em; /* 18px */
-  margin-top: 0.857em;
-  margin-bottom: 0.428em;
-  font-weight: bold;
-}
-
-h4 {
-  font-size: 1.5em; /* 18px */
-  line-height: 1em; /* 18px */
-  margin-top: 1em;
-  margin-bottom: 0em;
-}
-
-h5 {
-  font-size: 1.3333em; /* 16px */
-  line-height: 1.125em; /* 18px */
-  margin-top: 1.125em;
-  margin-bottom: 0em;
-}
-
-h6 {
-  font-size: 1.1667em; /* 14px */
-  line-height: 1.2857em; /* 18px */
-  margin-top: 1.2857em;
-  margin-bottom: 0em;
-}
 
 section#bree_logo {
   position: relative;
@@ -336,50 +323,5 @@ section#contacts {
     border-radius: 5px; /* CSS3 */
     padding: 5px;
     width: 450px;
-  }
-}
-
-footer {
-  position: relative;
-  background-color: #A2907D;
-  padding: 5px 10px;
-  border-top: 1px solid #89745D;
-  font-size: 0.9em;
-  color: #5B534B;
-  text-align: center;
-  
-  p {
-    margin: 0.25em;
-  }
-  
-  #social_buttons {
-    position: absolute;
-    left: 20px;
-    top: 3px;
-    width: 386px;
-    text-align: left;
-    
-    .twitter, .facebook, .plus-one {
-      display: inline-block;
-      zoom: 1;
-      font-size: 1em;
-      letter-spacing: normal;
-      white-space: normal;
-      vertical-align: top;
-    }
-    
-    .twitter {
-      padding: 4px 2px 0 0;
-      width: 70px;
-    }
-    
-    .plus-one {
-      padding: 2px 0 0 45px;
-    }
-    
-    .facebook {
-      padding-top: 4px;
-      width: 280px;
-    }
   }
 }
