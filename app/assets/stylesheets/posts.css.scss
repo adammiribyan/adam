@@ -24,7 +24,11 @@ body.posts {
     }
   }
   
-  header {    
+  header {   
+    a.logo:hover {
+      background-color: white;
+    }
+    
     h1.logo {
       background: url("/assets/getsome_logo.jpg") no-repeat;
       width: 500px;
