@@ -1,6 +1,9 @@
 Adam::Application.routes.draw do
-  resources :posts
-
+  scope '/getsome' do
+    match '/' => 'posts#index'
+    resources :posts
+  end
+  
   resources :requests
 
   # The priority is based upon order of creation:
@@ -11,3 +14,4 @@ Adam::Application.routes.draw do
   # Beautiful promo pages
   match '/:id' => 'pages#show'
 end
+
