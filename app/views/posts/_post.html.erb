@@ -15,5 +15,13 @@
   </div>
   <div class="facebook-like"><fb:like href="<%= post_url(post) %>" send="false" width="400" show_faces="true" action="like" font="Arial"></fb:like></div>
 </footer>
+<div class="facebook-comments">
+  <% unless controller.action_name == "show" %>
+    <p class="comments-count"><a href="<%= post_path(post) %>">Комментарии</a> <span class="count"><fb:comments-count href="<%= post_url(post) %>"></fb:comments-count></span</p>
+  <% end %>
+  <div class="comments">
+    <fb:comments href="<%= post_url(post) %>" num_posts="10" width="500"></fb:comments>
+  </div>
+</div>
 <% end %>
   
