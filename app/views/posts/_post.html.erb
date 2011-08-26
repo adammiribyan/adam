@@ -1,7 +1,7 @@
 <%= content_tag_for(:article, post) do %>
 <header>
   <hgroup>
-    <h1><%= link_to_unless_current post.title, post %><time datetime="<%= post.created_at %>"><%= l(post.created_at.to_date)%></time></h1>
+    <h1><%= link_to_unless_current post.title, post %><time datetime="<%= post.created_at %>"><%= l(post.created_at.to_date, :format => :long)%></time></h1>
     <h2><%= post.lead %></h2>
   </hgroup>
 </header>
