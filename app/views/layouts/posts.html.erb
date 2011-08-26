@@ -11,7 +11,6 @@
     <%= csrf_meta_tag %>
   </head>
   <body class="<%= params.values_at(:controller, :action).join(' ') %>">
-    <%= render "google_plus_init" %>
     <%= render "facebook_init" %>
     <%= render "vkontakte_init" %>
     
