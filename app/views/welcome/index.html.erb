@@ -15,17 +15,24 @@
 
 <ul id="projects">
   <li class="caption"><%= t(:caption, scope: [:projects]) %></li>
-  <li data-description="<%= t(:description, scope: [:projects, :talks]) %>">
+  <li>
     <span class="date">2010</span>
-    <%= link_to "Talks", "http://t-a-l-k-s.com" %>    
+    <ul>
+      <li><%= link_to "Talks", "http://t-a-l-k-s.com", data: { description: t(:description, scope: [:projects, :talks]) } %></li>      
+    </ul>
   </li>
-  <li data-description="<%= t(:description, scope: [:projects, :bree]) %>">
+  <li>
     <span class="date">2011</span>
-    <%= link_to "Bree", "/bree" %>
+    <ul>
+      <li><%= link_to "Bree", "/bree", data: { description: t(:description, scope: [:projects, :bree]) } %></li>
+      <li><%= link_to "Julie Ibragimova", "http://julieibragimova.com", data: { description: t(:description, scope: [:projects, :julie]) } %></li>
+    </ul>
   </li>
   <li class="coming-soon">
     <span class="date">2012</span>
-    Tongueshape
+    <ul>
+      <li>Tongueshape</li>
+    </ul>
   </li>
 </ul>
 

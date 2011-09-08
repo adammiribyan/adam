@@ -48,6 +48,17 @@ body.welcome {
     li {
       display: inline-block;
       margin-right: 1.75em;
+      vertical-align: top;
+      
+      &>ul {
+        padding: 0;
+        margin: 0;
+        
+        li {
+          display: block;
+          margin: 0 0 0.5em 0;
+        }
+      }
       
       .date {
         display: block;
@@ -72,7 +83,7 @@ body.welcome {
           color: white;
           background-color: #222;
           text-decoration: none;
-          border: none;
+          border-color: #222;
         }
       }
       
@@ -85,6 +96,7 @@ body.welcome {
         letter-spacing: 0;
         font-weight: bold;
         font-size: 0.75em;
+        margin-top: 1.92em !important;
       }
     }
   }
