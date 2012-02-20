@@ -1,3 +1,4 @@
+#!/usr/bin/env rake
 require 'rubygems'
 
 # Set up gems listed in the Gemfile.

@@ -1,10 +1,10 @@
-<ul id="language">
+<!-- ul id="language">
   <% unless I18n.locale == :cz %>
     <li><%= link_to "CZ", locale: "cz" %></li>
   <% else %>
     <li><%= link_to "RU", "/"  %></li>
   <% end %>
-</ul>
+</ul -->
 
 <header>
   <hgroup>
@@ -18,7 +18,8 @@
   <li>
     <span class="date">2010</span>
     <ul>
-      <li><%= link_to "Talks", "http://t-a-l-k-s.com", data: { description: t(:description, scope: [:projects, :talks]) } %></li>      
+      <%# <li><%= link_to "Talks", "http://t-a-l-k-s.com", data: { description: t(:description, scope: [:projects, :talks]) } %1></li> %>      
+      <li class="coming-soon">Talks</li>
     </ul>
   </li>
   <li>
@@ -32,7 +33,9 @@
   <li>
     <span class="date">2012</span>
     <ul>
-      <li class="coming-soon">Tongueshape</li>
+      <li><%= link_to "Tongueshape", "http://tongueshape.com", data: { description: t(:description, scope: [:projects, :tongueshape]) } %></li>
+      <li><%= link_to "Lawdingo", "http://lawdingo.com", data: { description: t(:description, scope: [:projects, :lawdingo]) } %></li>
+      <li class="coming-soon">Honest Place</li>
     </ul>
   </li>
 </ul>
